@@ -1,0 +1,228 @@
+/*Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*MY CODE*/
+
+:root {
+    --gray-font: rgb(161, 161, 161);
+}
+
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Catamaran', sans-serif;
+}
+
+html {
+    background-color: rgb(165, 153, 131);
+}
+/*Landing-Image*/
+
+.landing-image {
+    background-image: url(file:///C:/my-landing-page/assets/images/consti.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*Welcome Text*/
+
+.name {
+    font-weight: 600;
+    color: var(--gray-font);
+    font-size: 35px;
+}
+
+.header-welcome {
+    text-align: center;
+    font-weight: 600;
+    color: var(--gray-font);
+    text-decoration: underline;
+    font-size: 35px;
+    padding: 20px 0px;
+    margin: auto;
+    line-height: 1.15;
+}
+
+/*landing-nav*/
+
+header nav ul {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline;
+    list-style: none;
+    padding: 14px;
+}
+
+header nav ul a {
+    font-size: 26px;
+    color: var(--gray-font)
+}
+
+header nav ul a:hover {
+    text-shadow: 0px 0px 5px #bebebe;
+    filter:drop-shadow(color=#bebebe), (offx=2 offy=2);
+}
+
+/*main*/
+
+.main-page {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 25px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+
+/*boxes*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 600px;
+    grid-gap: 20px;
+    grid-template-areas:
+    "header work-1 work-1"
+    "header work-2 work-3"
+    "footer footer footer";
+    margin: 20px;
+}
+ 
+.header {
+    grid-area: header;
+    background-color: rgb(230, 230, 230);
+    border-radius: 25px;
+    display: grid;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(24, 24, 24);
+}
+
+.work-1 {
+    grid-area: work-1;
+    background-image: url(file:///C:/my-landing-page/assets/images/hori-2.jpg);
+    border-radius: 25px;
+    display: grid;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.hori-link {
+    text-decoration: none;
+}
+
+.work-2 {
+    grid-area: work-2;
+    background-image: url(file:///C:/my-landing-page/assets/images/179-1799200_github-logo-icon-github-logo-png.jpg);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(24, 24, 24);
+}
+
+.span{
+    background-color: rgb(216, 216, 216);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.span:hover {
+    text-shadow: 0px 0px 5px #ffffff;
+    filter:drop-shadow(color=#ffffff), (offx=2 offy=2);
+}
+
+
+.work-3 {
+    grid-area: work-3;
+    background-image: url(file:///C:/my-landing-page/assets/images/github-3.jpg);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(24, 24, 24);
+}
+.footer {
+    grid-area: footer;
+    background-image: url(file:///C:/my-landing-page/assets/images/consti.jpg);
+    padding-top: 50px;
+}
+
+.grid {
+    justify-content: center;
+}
+
+.about-content {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/3;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(24, 24, 24);
+    place-items: center;
+}
+
+.about-image {
+    width: 150px;
+    height: 170px;
+    padding-top: 30px;
+    object-fit: fill;
+}
+
+.footer-content {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/3;
+    text-align: center;
+    font-size: 24px;
+    color: var(--gray-font);
+    place-items: center;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.fglow:hover {
+    text-shadow: 0px 0px 5px #bebebe;
+    filter:drop-shadow(color=#bebebe), (offx=2 offy=2);
+}
